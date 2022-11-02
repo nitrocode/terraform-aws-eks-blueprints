@@ -1341,6 +1341,19 @@ variable "nvidia_device_plugin_helm_config" {
   default     = {}
 }
 
+#-----------Falco ADDON-----------------------
+variable "enable_falco" {
+  description = "Enable falco add-on"
+  type        = bool
+  default     = false
+}
+
+variable "falco_helm_config" {
+  description = "Falco Helm Chart config"
+  type        = any
+  default     = {}
+}
+
 #-----------App 2048-----------------------
 variable "enable_app_2048" {
   description = "Enable sample app 2048"
